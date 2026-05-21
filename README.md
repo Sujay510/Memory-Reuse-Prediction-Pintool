@@ -13,7 +13,7 @@ Each bucket has a range of the reuse distance:
     Bucket 5: Every distance of range (10001,100000) gets updated here
     Bucket 6: Every distance greater than 100000 gets updated here
 
-# History Array
+# History Vector
     We maintain a history vector for each memory address. It stores which bucket is being updated.
     FOR EXAMPLE:
      If the reuse distances are 50, 40, 104, 10002, 1000.
