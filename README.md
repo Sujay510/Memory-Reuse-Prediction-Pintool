@@ -20,7 +20,7 @@ Each bucket has a range of the reuse distance:
      The history array will look something like this history = [B2,B2,B3,B5,B3]
      Most recent bucket updated will have the index n-1 (n being the number of accesses).
 # Prediction Algorithm
-     We traverse through the hustory vectore and we assign exponential weights to each of the buckets
+     We traverse through the history vector and we assign exponential weights to each of the buckets
      using the formula:
         weight(i) = α^(N-1-i)
     α being the decay factor here I have taken it as 0.9.
