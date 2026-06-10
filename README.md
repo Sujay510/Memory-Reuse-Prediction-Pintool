@@ -32,15 +32,8 @@ Each bucket has a range of the reuse distance:
     !!ONE THING TO KEEP IN MIND IS THAT WE PREDICT THE RESUSE DISTANCE RANGE NOT THE EXACT DISTANCE!!
     
 # Validation
-    To make this validation I thought of using the first 70% of the data inside the history vector to 
-    calculate the weights thereby getting the prediction and then verifying it with the remaining 30%
-    of the data in the history vector.
-    But I couldn't implement this in the pintool itself, because I am new to pintool in the pintool it
-    gives the prediction based on 100% of the data rather than splitting it.
-    For this I have made a simulation by using a python script, It uses the data from the csv file 
-    generated from the pintool, and reconstructs the history vector on its own, there by sometime
-    this history vector itself could be inconsistent in the python script. It is an interactive model.
-
+    For validation, a Python simulation reads the CSV output from the pintool, reconstructs the history 
+    vector, and runs the 70/30 split externally. It is an interactive model.
 # Requirements
     The device you are using must have intel chip of x86 architecture.(Though other pintool are available but I have implemented in the previously mentioned specs)
     Use Linux OS
@@ -77,10 +70,3 @@ Each bucket has a range of the reuse distance:
     in the same place and paste the code given in it.
     go back to the directory where you pasted the python file and run "python /filename/.py "
     Now you will have a interactive program running.
-
-# UPDATE
-    If anyone is willing to help me regarding implementing the validation in the pintool itself it would be of geat help.
-    I also would like to add this may take a lot of space since the history vectors maybe really large sometimes.
-    To implement the correct history vector in python script we need to pass the history vectors in
-    csv file since it takes input from csv file. Although there could be another method of passing
-    this data instead of using the csv file. It would be of great help if anyone could help me implement this part too.
