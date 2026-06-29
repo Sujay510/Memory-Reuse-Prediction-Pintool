@@ -55,7 +55,7 @@ Each bucket has a range of the reuse distance:
             For example: export PIN_ROOT=/home/user/pin_kit
             To reflect variable on terminal use command “source ~/.bashrc”
             Intel Pin provides API to build Pintool, which can be used to analyze any user program (dynamic instrumentation)
-            Various examples are given in $PIN_ROOT/source/tools/
+            Various  examples are given in $PIN_ROOT/source/tools/
             Compiling Pintool using intel pin, sample example given in “path-to-pin-kit/pin_kit/source/tools/MyPinTool”, make file is already there
         4.Run “make”
             It creates “obj-intel64/” folder contains “.so” library object (pintool)
